@@ -1,0 +1,69 @@
+Generate summaries for at least 5 sample paragraphs :
+
+long_texts = [
+    "summarize: The global climate crisis has reached a critical point, with temperatures rising faster than expected. Scientists have observed a dramatic increase in ice melt in both the Arctic and Antarctic regions. Sea levels are projected to rise significantly by the end of the century, threatening coastal cities worldwide. Forest fires, heatwaves, and hurricanes are becoming more frequent and intense, indicating the need for urgent action. International agreements such as the Paris Accord have called for reducing emissions, but many countries are falling short of their targets. Experts emphasize the need for systemic change in energy production, transportation, and agriculture to curb greenhouse gases effectively.",
+    
+    "summarize: India's digital transformation has accelerated rapidly in the last decade, driven by initiatives like Digital India, UPI, and Aadhaar. The country's fintech sector is now one of the fastest-growing in the world, with millions of users adopting mobile wallets, online banking, and digital lending platforms. Government schemes have helped bring internet access to rural areas, empowering small businesses and farmers through e-commerce and mobile applications. However, challenges like digital literacy, cybersecurity, and data privacy remain significant. Experts suggest that continued investment in infrastructure and policy reform will be essential to sustain this digital revolution and make it inclusive.",
+    
+    "summarize: The Artemis program marks NASA’s ambitious return to lunar exploration. Unlike previous missions, Artemis aims to create a sustainable human presence on the moon. Artemis I successfully tested the Space Launch System and Orion spacecraft in an uncrewed mission around the moon. Artemis II will carry astronauts, and Artemis III plans to land the first woman and person of color on the lunar surface. These missions are stepping stones toward Mars exploration. NASA is collaborating with private partners like SpaceX to develop lunar landers and support systems. Scientists hope to establish a lunar base for research, resource utilization, and testing technologies for deep space travel.",
+    
+    "summarize: Advances in artificial intelligence are reshaping industries across the globe. From natural language processing to computer vision, AI technologies are improving productivity, decision-making, and customer experiences. Healthcare has seen remarkable applications, such as AI-driven diagnostics, personalized treatment plans, and drug discovery. In finance, algorithms detect fraud and automate trading. However, ethical concerns around bias, surveillance, and job displacement are growing. Policymakers are debating regulations to ensure AI is used responsibly. Transparency, accountability, and fairness are crucial to building trust in AI systems. As AI continues to evolve, experts believe human oversight and ethical frameworks will be key to guiding its impact.",
+    
+    "summarize: The COVID-19 pandemic has reshaped how societies function, highlighting the importance of resilience and preparedness. Governments worldwide implemented lockdowns, contact tracing, and mass vaccination to curb the virus's spread. While some countries managed better than others, the pandemic exposed weaknesses in healthcare infrastructure, supply chains, and crisis communication. Remote work, online education, and telemedicine became mainstream, accelerating digital adoption. Researchers developed vaccines at unprecedented speeds using mRNA technology, a breakthrough with potential beyond COVID. Moving forward, experts recommend strengthening health systems, investing in early warning mechanisms, and maintaining global cooperation to face future pandemics more effectively."
+]
+
+
+
+--- Long Text 1 Summary ---
+Original Text (chars): 723, Tokens: 134
+Summary Text  (chars): 275, Tokens: 52
+
+Summary:
+The global climate crisis has reached a critical point, with temperatures rising faster than expected. Scientists have observed a dramatic increase in ice melt in both the Arctic and Antarctic regions. Sea levels are projected to rise significantly by the end of the century.
+
+--- Long Text 2 Summary ---
+Original Text (chars): 719, Tokens: 135
+Summary Text  (chars): 209, Tokens: 40
+
+Summary:
+India's fintech sector is now one of the fastest-growing in the world. Government schemes have helped bring internet access to rural areas. Digital literacy, cybersecurity, and data privacy remain significant.
+
+--- Long Text 3 Summary ---
+Original Text (chars): 698, Tokens: 140
+Summary Text  (chars): 285, Tokens: 56
+
+Summary:
+Artemis I successfully tested the Space Launch System and Orion spacecraft. Artemis III plans to land the first woman and person of color on the lunar surface. Scientists hope to establish a lunar base for research, resource utilization, and testing technologies for deep space travel.
+
+👇
+
+--- Long Text 4 Summary ---
+Original Text (chars): 777, Tokens: 143
+Summary Text  (chars): 353, Tokens: 62
+
+Summary:
+Advances in artificial intelligence are reshaping industries across the globe. From natural language processing to computer vision, AI technologies are improving productivity, decision-making, and customer experiences. In finance, algorithms detect fraud and automate trading. Ethics concerns around bias, surveillance, and job displacement are growing.
+
+--- Long Text 5 Summary ---
+Original Text (chars): 793, Tokens: 147
+Summary Text  (chars): 274, Tokens: 59
+
+Summary:
+Governments implemented lockdowns, contact tracing, and mass vaccination to curb virus's spread. Governments worldwide implemented lockdowns, contact tracing, and mass vaccination to curb the virus's spread. Remote work, online education, and telemedicine became mainstream.
+
+
+============================================================================================================================================================================================
+
+ Compare model-generated summaries vs. extractive method (e.g., spaCy)
+
+--- Text 1 Comparison ---
+Original Length: 712 chars
+
+Abstractive Summary:
+The global climate crisis has reached a critical point, with temperatures rising faster than expected. Scientists have observed a dramatic increase in ice melt in both the Arctic and Antarctic regions. Sea levels are projected to rise significantly by the end of the century.
+Abstractive Length: 275 chars
+
+Extractive Summary:
+Experts emphasize the need for systemic change in energy production, transportation, and agriculture to curb greenhouse gases effectively. Sea levels are projected to rise significantly by the end of the century, threatening coastal cities worldwide. Forest fires, heatwaves, and hurricanes are becoming more frequent and intense, indicating the need for urgent action.
+Extractive Length: 369 chars
+
