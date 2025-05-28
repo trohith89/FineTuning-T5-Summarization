@@ -2,7 +2,6 @@
 
 # 📝 KDTS Task 04 — Text Summarization Using NLP
 
-
 Welcome to the repository for **Task KDT04: Text Summarization Using NLP**, where we fine-tune a transformer-based model to generate high-quality abstractive summaries using Hugging Face Transformers and the CNN/DailyMail dataset.
 
 ---
@@ -20,8 +19,8 @@ Welcome to the repository for **Task KDT04: Text Summarization Using NLP**, wher
 | Use T5, BART, or PEGASUS from Hugging Face                    | ✅ T5-small |
 | Train on a small custom dataset or CNN/DailyMail              | ✅ 60K rows from CNN/DailyMail |
 | Generate summaries for at least 5 sample paragraphs           | ✅ 10+ samples |
-| Compare model-generated summaries vs. extractive method       | ⏳ Coming Soon |
-| Include a web form to paste text and view summary             | ⏳ Coming Soon |
+| Compare model-generated summaries vs. extractive method       | ✅ Compared generated vs extractive summary |
+| Include a web form to paste text and view summary             | ✅ Created and deployed a streamlit application on hugging face |
 
 ---
 
@@ -53,7 +52,7 @@ We fine-tuned the `t5-small` model for summarization and published it on the Hug
 ### 1. Data Preparation  
 - Loaded 3 versions of CNN/DailyMail using Hugging Face Datasets
 - Combined them into a single DatasetDict
-- Split into train/validation/test
+- Split into train/validation/test 
 
 ### 2. Tokenization  
 - Prefixed each article with `summarize:`
