@@ -1,4 +1,4 @@
-# 🌟 [Summarization Streamlit Application Link]([https://huggingface.co/spaces/trohith89/T5-FineTuning-Summary](https://finetuning-t5-summarization-jybt9gjaayxzweh97ja4sn.streamlit.app/))
+# 🌟 [Summarization Streamlit Application Link](https://huggingface.co/spaces/trohith89/T5-FineTuning-Summary](https://finetuning-t5-summarization-jybt9gjaayxzweh97ja4sn.streamlit.app/)
 
 # 📝 KDTS Task 04 — Text Summarization Using NLP
 
